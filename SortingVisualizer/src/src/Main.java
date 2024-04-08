@@ -29,9 +29,9 @@ public class Main {
 
          */
 
-        elements.add(new GraphicElement("download.png", 209));
-        elements.add(new GraphicElement("download1.png", 275));
-        elements.add(new GraphicElement("download2.png", 192));
+        elements.add(new GraphicElement("1.png", 209));
+        elements.add(new GraphicElement("2.png", 275));
+        elements.add(new GraphicElement("3.png", 192));
         elements.add(new GraphicElement("4.png", 192));
 
         /*
