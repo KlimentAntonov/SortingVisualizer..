@@ -29,12 +29,19 @@ public class Main {
 
          */
 
+        elements.add(new GraphicElement("download.png", 209));
+        elements.add(new GraphicElement("download1.png", 275));
+        elements.add(new GraphicElement("download2.png", 192));
+        elements.add(new GraphicElement("4.png", 192));
+
+        /*
         elements.add(new GraphicElement("img.png", 290));
         elements.add(new GraphicElement("img_1.png", 318));
         elements.add(new GraphicElement("img_2.png", 290));
         elements.add(new GraphicElement("img_3.png", 283));
         elements.add(new GraphicElement("img_4.png", 225));
         elements.add(new GraphicElement("img_5.png", 275));
+        */
 
         return elements;
     }
