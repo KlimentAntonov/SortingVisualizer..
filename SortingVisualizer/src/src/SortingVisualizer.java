@@ -36,7 +36,7 @@ public class SortingVisualizer extends JFrame {
         panel.add(sortButton);
 
         JPanel imgPnl = new JPanel();
-        imgPnl.setBounds(0,0,1600,1200);
+        imgPnl.setBounds(0,-200,1600,1200);
         imgPnl.setLayout(new GridLayout(1,5));
         imgPnl.setBorder(new LineBorder(Color.RED,2));
         imgPnl.setBackground(Color.RED);
