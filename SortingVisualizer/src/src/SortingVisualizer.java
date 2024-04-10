@@ -70,7 +70,18 @@ public class SortingVisualizer extends JFrame {
                 case "Quick sort":
                     quicksort();
                     break;
+                case "Heap sort":
+                    heapsort();
+                    break;
             }
+            imgPnl.removeAll();
+            for (GraphicElement el : elements) {
+                imgPnl.add(el.getImage());
+            }
+            imgPnl.revalidate();
+            panel.repaint();
+            sortButton.repaint();
+            sortingAlgorithmsComboBox.repaint();
         });
     }
 
