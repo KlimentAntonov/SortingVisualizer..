@@ -15,7 +15,7 @@ public class SortingVisualizer extends JFrame {
     public SortingVisualizer(List<GraphicElement> elements) {
         this.elements = elements;
         setTitle("Sorting Visualizer");
-        setSize(800, 600);
+        setSize(1600, 1200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         sortingAlgorithmsComboBox = new JComboBox<>(new String[]{"Bubble sort", "Selection sort", "Insertion sort", "Merge sort", "Quick sort", "Heap sort", "Reset", "FLAGS"});
@@ -23,7 +23,7 @@ public class SortingVisualizer extends JFrame {
         panel = new JPanel();
 
         panel.setLayout(null);
-        panel.setBounds(0,0,800,600);
+        panel.setBounds(0,0,1600,1200);
         panel.setBorder(new LineBorder(Color.RED,2));
 
         sortingAlgorithmsComboBox.setBounds(10,10,200,30);
@@ -36,7 +36,7 @@ public class SortingVisualizer extends JFrame {
         panel.add(sortButton);
 
         JPanel imgPnl = new JPanel();
-        imgPnl.setBounds(0,0,800,600);
+        imgPnl.setBounds(0,0,1600,1200);
         imgPnl.setLayout(new GridLayout(1,5));
         imgPnl.setBorder(new LineBorder(Color.RED,2));
         imgPnl.setBackground(Color.RED);
