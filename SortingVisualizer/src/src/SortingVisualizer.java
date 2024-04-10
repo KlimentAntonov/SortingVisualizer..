@@ -18,12 +18,12 @@ public class SortingVisualizer extends JFrame {
         setSize(1600, 1200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        sortingAlgorithmsComboBox = new JComboBox<>(new String[]{"Bubble sort", "Selection sort", "Insertion sort", "Merge sort", "Quick sort", "Heap sort"});
+        sortingAlgorithmsComboBox = new JComboBox<>(new String[]{"Bubble sort", "Selection sort", "Insertion sort", "Merge sort", "Quick sort", "Heap sort", "Reset", "FLAGS"});
         sortButton = new JButton("Sort");
         panel = new JPanel();
 
         panel.setLayout(null);
-        panel.setBounds(0,0,1600,1200);
+        panel.setBounds(0,0,800,600);
         panel.setBorder(new LineBorder(Color.RED,2));
 
         sortingAlgorithmsComboBox.setBounds(10,10,200,30);
@@ -36,7 +36,7 @@ public class SortingVisualizer extends JFrame {
         panel.add(sortButton);
 
         JPanel imgPnl = new JPanel();
-        imgPnl.setBounds(0,-200,1600,1200);
+        imgPnl.setBounds(0,0,800,600);
         imgPnl.setLayout(new GridLayout(1,5));
         imgPnl.setBorder(new LineBorder(Color.RED,2));
         imgPnl.setBackground(Color.RED);
@@ -73,6 +73,12 @@ public class SortingVisualizer extends JFrame {
                 case "Heap sort":
                     heapsort();
                     break;
+                case "Reset":
+                    reset();
+                    break;
+                case "FLAGS":
+                    flags();
+                    break;
             }
             imgPnl.removeAll();
             for (GraphicElement el : elements) {
@@ -85,6 +91,27 @@ public class SortingVisualizer extends JFrame {
         });
     }
 
+    private void reset() {
+        elements.clear();
+
+        elements.add(new GraphicElement("1.png", 300));
+        elements.add(new GraphicElement("2.png", 157));
+        elements.add(new GraphicElement("3.png", 101));
+        elements.add(new GraphicElement("4.png", 192));
+
+    }
+
+    private void flags() {
+        elements.clear();
+
+        elements.add(new GraphicElement("img.png", 290));
+        elements.add(new GraphicElement("img_1.png", 318));
+        elements.add(new GraphicElement("img_2.png", 290));
+        elements.add(new GraphicElement("img_3.png", 283));
+        elements.add(new GraphicElement("img_4.png", 225));
+        elements.add(new GraphicElement("img_5.png", 275));
+    }
+    
     private void bubblesort() {
         int n = elements.size();
         for (int i = 0; i < n - 1; i++) {
