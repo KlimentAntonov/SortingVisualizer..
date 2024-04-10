@@ -15,7 +15,7 @@ public class SortingVisualizer extends JFrame {
     public SortingVisualizer(List<GraphicElement> elements) {
         this.elements = elements;
         setTitle("Sorting Visualizer");
-        setSize(1600, 1200);
+        setSize(800, 600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         sortingAlgorithmsComboBox = new JComboBox<>(new String[]{"Bubble sort", "Selection sort", "Insertion sort", "Merge sort", "Quick sort", "Heap sort", "Reset", "FLAGS"});
